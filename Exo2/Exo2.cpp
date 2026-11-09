@@ -2,10 +2,25 @@
 //
 
 #include <iostream>
+struct essai
+{
+	int n;
+	float x;
+};
+void raz(essai &entree) {
+	entree.n = 0;
+	entree.x = 0;
+}
+
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	essai essai2;
+	essai2.n = 5;
+	essai2.x = 3.14;
+	printf_s("n= %d , x= %f\n", essai2.n, essai2.x);
+	raz(essai2);
+	printf_s("n= %d , x= %f\n", essai2.n, essai2.x);
 }
 
 // Exécuter le programme : Ctrl+F5 ou menu Déboguer > Exécuter sans débogage
